@@ -1,0 +1,15 @@
+# srimeta.yaml
+sriProjects:
+- 'P25942.001'
+
+sriContacts:
+- 'aswin.raghavan@sri.com'
+- 'jesse.hostetler@sri.com'
+- 'abrar.rahman@sri.com'
+- 'indranil.sur@sri.com'
+- 'zachary.daniels@sri.com'
+
+description: 'End-to-end implementation of the L2M project.'
+
+sriOrgs:
+- '480'

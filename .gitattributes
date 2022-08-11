@@ -1,0 +1,6 @@
+trajectories/** filter=lfs diff=lfs merge=lfs -text
+checkpoints/** filter=lfs diff=lfs merge=lfs -text
+task_labels.npy filter=lfs diff=lfs merge=lfs -text
+training_data.npz filter=lfs diff=lfs merge=lfs -text
+reward/** filter=lfs diff=lfs merge=lfs -text
+m18_ste_run/l2data.zip filter=lfs diff=lfs merge=lfs -text
