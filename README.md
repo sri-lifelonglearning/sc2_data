@@ -1,6 +1,6 @@
-# l2m_data
+# SC2_data
 
-Dedicated LFS repo for large data files related to the SRI L2M SG.
+Dedicated LFS repo for large data files related to the SRI SC2 SG.
 
 If you're new to LFS, here is a decent starting point: https://docs.gitlab.com/ee/topics/git/lfs/
 
@@ -12,12 +12,12 @@ To fine-tune what files get pulled when you do `git pull`, use `git config lfs.f
 
 * Clone the repo, excluding all LFS files:
 ```bash
-$ git clone -c lfs.fetchexclude='*' https://gitlab.sri.com/l2m/system/l2m_data.git
+$ git clone -c lfs.fetchexclude='*' https://github.com/sri-lifelonglearning/sc2_data.git
 ```
 
 * Pull only the data files you want:
 ```bash
-$ cd l2m_data
+$ cd sc2_data
 $ git config lfs.fetchexclude ''
 $ git config lfs.fetchinclude 'task_labels.npy,training_data.npz'
 $ git lfs pull
@@ -27,7 +27,7 @@ $ git lfs pull
 
 These are datasets of complete trajectories generated from a Task+Policy pair. The directory structure will be `trajectories/<name of policy>/<name of task>/epXXX.pkl.gz`, where `XXX` is the sequential index of the episode.
 
-The trajectories can be loaded with `m3t.data.load_trajectory( <path> )`. The implementation of this function in `l2m_data` is identical in functionality and compatible with the version in `l2m_full`, but without dependencies on other parts of `l2m_full`.
+The trajectories can be loaded with `m3t.data.load_trajectory( <path> )`.
 
 ## Data format
 
